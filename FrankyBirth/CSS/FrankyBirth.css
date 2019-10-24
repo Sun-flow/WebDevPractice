@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin-top: 10px;
+    margin: 40px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#intro{
+    font-size: 25px;
+    text-align: left;
+}
+
+#Greeting{
+    text-align: center;
+    
+}
+
+#FrankyBirth{
+    background-image: linear-gradient(rgba(254, 130, 22, 1), rgba(254, 130, 22, .5));
+}
+
+#titty{
+    font-size: 300px;
+}
+
+#titty2{
+    font-size: 300px;
+   
+}
+
+#heart{
+    font-size: 75px;
+}
+
+.button a:link, .button a:visited {
+    background-color: rgba(255, 158, 66, 1));
+    color: black;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid black;
+}
+  
+.button a:hover, .button a:active {
+    background-color: white;
+    color: black;
+}
