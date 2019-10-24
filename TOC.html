@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- This is the tag for comments, anything I want to say to you will be between these braces-->
+
+<!--This is the title of the page, it determines what the tab on the browser displays-->
+<!--head should only ever include info about the page, no actual visible stuff on the page-->
+<head>
+    <title>Table of Contents</title>
+</head>
+
+<!--this is the main body, obviously. This contains just about everything that anyone will see-->
+<body style="background-color:burlywood">
+    
+    <!--First header. Each header can utilize different css stylings so that they can look different-->
+    <h1>
+        <p>HOW TO MAKE PAGES CRASH COURSE</p>
+    </h1>
+   
+    <h2>
+        <p>Hi Franky! Here's some basic code for you, which includes separate pages and links between pages <3</p> 
+    </h2>
+
+    <h3>
+        <p>
+            In the html and ccs code, I'll include some comments explaining what code does what.
+            <br>
+            It should be relatively straightforward to copy paste :)
+        </p>
+    </h3>
+
+    <h3>
+        <p>PAGE LINKS:</p>
+    </h3>
+
+    <!--this is the meat, the big stuff, the stuff you care about: the pages-->
+    <!--the element '<a></a>' is what's known as an anchor. It basically attaches something to something else.-->
+    <!--inside of the anchor element, theres a hyperlink reference (href) to a different document,and a tag within that document. The document being linked to, in this case, is another webpage (index). As of now, it exist within the same folder as TOC.html so that the path is simple, but can be made to exist elsewhere later on.-->
+    <!--the most interesting part of this, and the more complicated part, is the ID being used to specify exactly /where/ on the page the link is sending you on click. This allows you to link to different parts of a single page, sorta like the TOC on a wikipedia article does. In index.html, I have set up elements with the ID 'Top' and 'Bottom'. Based on which link you click, you will be taken to a different part of the webpage. Go find those tags in index.html now so that you know what I'm talking about. This feature would be really useful for a TOC in your visual novels, allowing people to jump to different parts from the top without having to scroll all the way too them. This would also prevent you from having to break pages in order for convenience.-->
+
+    <!--The format for a link to a page with a tag is 'pageName#ID', you can set them up however you like-->
+    <h4 style="font-size: 30px">
+        <a href=SelSpec.html#Top">CSS Selectors and Specificity: Top of Page</a>
+        <br><br>
+        <a href="SelSpec.html#Bottom">CSS Selectors and Specificity: Bottom of Page</a>
+        <br><br>
+        <a href="HoverMenu.html#">Hover Menu Experiment</a>
+        <br><br>
+        <a href="ListRand.html#">List Randomizer!</a>
+    </h4>
+
+</body>
+

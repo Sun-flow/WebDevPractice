@@ -1,0 +1,8 @@
+ul li {
+    display: none !important;
+}
+
+ul li:nth-last-of-type(4),
+ul li:nth-last-of-type(4) ~ li {
+    display: inherit !important;
+}

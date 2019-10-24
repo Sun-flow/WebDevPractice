@@ -1,0 +1,57 @@
+/*Hi baby! This is my formatting doc. It basically just contains all the styling classes I used for the page, nothing special or of note at the moment.*/
+
+
+#intro{
+    text-align: center;
+}
+
+.firstAttempt{
+    color: red;
+}
+
+.secondAttempt{
+    font-size: 12px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 15px;
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.background{
+    opacity: .5;
+    background-color: #FFE90E;
+}
+
+thead th { 
+    background: #BA8454;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+tbody {
+    background: #D49F71;
+}

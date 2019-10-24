@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+
+
+    <head>
+        <title>jQuery Hello World</title> 
+        <link href="ListRandomizer/LinkRandStyle.css" type="text/css" rel="stylesheet">
+    </head> 
+
+    <body> 
+
+        <h1>
+            <p>Welcome to randomized images! It randomizes out of 7 images! Click on them!</p>
+        </h1>
+    
+        <ul>
+            <li ID = "CheezCat"><a href="ListRand.html"><img src="ListRandomizer/CheezCat1.jpg" style="width:300px; height:250px; title="CheezCat1"></a></li>
+            <li ID = "CheezCat"><a href="ListRand.html"><img src="ListRandomizer/CheezCat2.jpg" style="width:300px; height:250px; title="CheezCat2"></a></li>
+            <li ID = "CheezCat"><a href="ListRand.html"><img src="ListRandomizer/CheezCat3.jpg" style="width:300px; height:250px; title="CheezCat3"></a></li>
+            <li ID = "CheezCat"><a href="ListRand.html"><img src="ListRandomizer/CheezCat4.jpg" style="width:300px; height:250px; title="CheezCat3"></a></li>
+            <li ID = "CheezCat"><a href="ListRand.html"><img src="ListRandomizer/CheezCat5.jpg" style="width:300px; height:250px; title="CheezCat3"></a></li>
+            <li ID = "CheezCat"><a href="ListRand.html"><img src="ListRandomizer/CheezCat6.jpg" style="width:300px; height:250px; title="CheezCat3"></a></li>
+            <li ID = "Midfing"><a href="ListRand.html"><img src="ListRandomizer/MiddleFing.jpg" style="width:300px; height:250px; title="CheezCat3"></a></li>
+
+            <li ID = "UrList">Should Not Show</li>
+        </ul>
+    
+        <script type="text/javascript">
+            var ul = document.querySelector('ul');
+            for (var i = ul.children.length; i >= 0; i--) {
+                if(ul.children[Math.random() * i | 0].id != "UrList"){ <!--This if clause is simply here to prevent a certain tag from being displayed. You probably don't need it-->
+                    ul.appendChild(ul.children[Math.random() * i | 0]);
+                }
+            }
+        </script>
+
+        <h1>
+            <a href="ListRand.html">Reload</a>
+        </h1>
+
+    </body>
+
+  
+
+</html>
+

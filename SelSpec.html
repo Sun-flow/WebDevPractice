@@ -1,0 +1,167 @@
+<DOCTYPE html>
+
+<head>
+    <title>CSS Selectificity</title>
+    <link href="SelectorsAndSpecificity/SSStyle.css" type="text/css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(255, 233, 14, .45)">
+
+    <div ID = "intro">
+
+    <!--NOTICE ME BABY-->
+    <!--Okay now that you're listening, here is the element with the tag 'Top'-->
+    <!--This tag is used by two links (atm), the one in the TOC and the one at the bottom of this page that says "Return to Top"-->
+    <!--IDs are super cool because they can be used multiple times. Just make sure that multiple elements dont have the same ID if you are planning to use the ID for a hyperlink, as if two different elements had the ID 'Top' on the same page then you wouldn't get the desired functionality-->
+    <h1 id = "Top">CSS selectors and specificity</h1>
+    <p>This page is an exploration of CSS selectors and their varying specificities</p>
+
+    <p class= "firstAttempt">this is my first attempt to append a class to a paragraph</p>
+    <p class = "firstAttempt secondAttempt">This is my first attempt to appeand a second class</p>
+
+    </div>
+
+    <h2 class = "alignLeft">This is h2.1</h2>
+    <p class = "alignLeft">
+        This is the paragraph that follows h2.1
+        <br>
+        This, and its heading, have been aligned left with the class "alignLeft"
+    </p>
+
+    <h3 class = "alignRight">This is h3.1</h3>
+    <p class = "alignRight">
+        This is the paragraph that follows h3.1
+        <br>
+        This, and its heading, have been aligned right with the class "alignRight"
+    </p>
+
+    <h4 class = "alignCenter">This is h4.1</h4>
+    <p class = "alignCenter">
+        This is the paragraph that follows h4.1
+        <br>
+        This, and its heading, have been aligned center with the class "alignCenter"
+    </p>
+    <br><br><br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">CSS Selector</th>
+                <th scope="col">Function/Specificity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Class</td>
+                <td>Specificity 1: Overriden by any other selector</td>
+            </tr>
+            <tr>
+                <td>Used to apply CSS elements in very broad cases</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tag</td>
+                <td>
+                Specificity 2: Overriden by everything but Class
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Used to apply CSS elements over a specific set of broad cases
+                </td>               
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>
+                    Specificity 3: Overrides all selectors but !Important
+                    <br>
+                    Used to apply CSS elements to specific items
+                </td>
+            </tr>
+            <tr>
+                <td>!Important</td>
+                <td>
+                    Specificity 1: Overrides any other selector, cannot be overriden
+                    <br>
+                    Used to apply CSS elements that should NEVER be overriden, only used in special cases
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <br><br><br>
+
+    <h2>
+        <p>
+            The Point
+            <br><br><br>
+            Of This 
+            <br><br><br>
+            Text
+            <br><br><br>
+            Is To 
+            <br><br><br>
+            Take
+            <br><br><br>
+            Up
+            <br><br><br>
+            Space
+            <br><br><br><br>
+        </p>
+    </h2>
+    
+    <div id = "Bottom"></div>
+    <a href = "#Top">Return to Top</a>
+
+    
+
+    <div>
+
+        <link href="SideBar.css" type="text/css" rel="stylesheet">
+
+        
+        
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="SelSpec.html#Top">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            CSS Selectors and Specificity: Top of Page
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="SelSpec.html#Bottom">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            CSS Selectors and Specificity: Bottom of Page
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="TOC.html#">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            TOC
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ListRand.html#">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            List Randomizer!
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        
+    </div>
+
+</body>
+</DOCTYPE>

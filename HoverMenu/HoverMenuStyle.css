@@ -1,0 +1,42 @@
+/*This is the css for the hover button*/
+
+/*This just makes the 'dropdown' box show up, it's a class that only connects to the actual button element*/
+.dropbtn{
+    background-color: tan;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Class which covers the entire element set, includes the button and the content*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/*Contains the css for the content, does not display until 'hover' occurs*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*What to display when 'hover' occurs*/
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*stuff to change basic things when menu is being hovered, includes command to display menu when 'hover' occurs and what the menu + its items do when they are hovered over*/
+.dropdown-content a:hover {background-color: tomato;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: blueviolet;}
