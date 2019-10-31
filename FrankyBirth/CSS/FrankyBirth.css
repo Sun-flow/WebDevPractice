@@ -23,6 +23,10 @@ body {
     background-image: linear-gradient(rgba(254, 130, 22, 1), rgba(254, 130, 22, .5));
 }
 
+#Heart{
+    background: rgb(255, 209, 26, 1);
+}
+
 #titty{
     font-size: 300px;
 }
@@ -32,9 +36,6 @@ body {
    
 }
 
-#heart{
-    font-size: 75px;
-}
 
 .button a:link, .button a:visited {
     background-color: rgba(255, 158, 66, 1));
@@ -49,4 +50,24 @@ body {
 .button a:hover, .button a:active {
     background-color: white;
     color: black;
+}
+
+.First{
+
+}
+
+
+
+#second {
+    font-size: 75px;
+    color: black;
+    padding: 10px 10px;
+    text-align: left;
+    Display: inline-block;
+    text-decoration: none;
+    border: none;
+}
+
+.scrollLink a:hover, .scrollLink a:active { 
+    background-color: white;
 }
