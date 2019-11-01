@@ -1,0 +1,207 @@
+@font-face{
+  font-family: AnonymousPro;
+  src: local("AnonymousPro"), 
+    url(/AnonymousPro/AnonymousPro.ttf) format('truetype');
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: white;
+  padding-top: 20px;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: blue;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+{box-sizing:border-box}
+
+.slides {
+  display: none;
+
+}
+img {
+  vertical-align: middle;
+  max-height: 90%;
+}
+
+.slideshow-container{
+  display: flex;
+  height: 60%;
+  width: auto;
+  position:relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: whitesmoke;
+}
+
+.slidetitle{
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideinfo {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.buttons {
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 10px;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  
+}
+
+.active, .dot:hover {
+  background-color: yellow;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name:fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.heading {
+  
+  font-size: 25px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  line-height: 0em;
+  padding: 0;
+}
+
+.heading h1{
+  line-height: .8em;
+}
+
+.heading h2 {
+  color: blueviolet;
+  margin-top: -.3em;
+}
+
+.body {
+  font-family: AnonymousPro;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 5px;
+}
+
+.linkers {
+  position: absolute;
+  transform: translate(10%);
+  bottom: 0;
+  width: 80%;
+  height: 7em;
+  vertical-align: bottom;
+}
+
+.linkers ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.linkers li {
+  padding: 5px 5px;
+}
+
+nav a {
+  font-weight: normal;
+  padding: 10px 5px;
+  font-size: .80em;
+}
+
+.linkers a:link {
+  vertical-align: bottom;
+  text-align: center;
+  padding: 5px;
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
