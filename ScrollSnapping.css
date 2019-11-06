@@ -1,0 +1,24 @@
+.holster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+}
+
+.container.y {
+  width: 256px;
+  height: 256px;
+  flex-flow: column nowrap;
+}
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}

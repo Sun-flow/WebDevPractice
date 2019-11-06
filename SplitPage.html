@@ -33,87 +33,48 @@
 
   <div class="split right">
 
-    <div class="slideshow-container">
+    <div ID="holster">
+      <div class="img-container y mandatory-scroll-snapping">
 
-      <div class="slides fade">
         <div class="proj">
-          <p class="projtitle">This is the first Cheezcat</p>
-          <p class = "projtitle projdate">October 2020</p>
+          <div class="">
+            <p class="projtitle">This is the first Cheezcat</p>
+            <p class = "projtitle projdate">October 2020</p>
+          </div>
+          <img ID="fill" src="MarketableNugget/ListRandomizer/CheezCat1.jpg">
+          <div class="projinfo">Here is info about the Cheezcat</div>
         </div>
-        <img ID="fill" src="MarketableNugget/ListRandomizer/CheezCat1.jpg">
-        <div class="projinfo">Here is info about the Cheezcat</div>
-      </div>
 
-      <div class="slides fade">
         <div class="proj">
-          <p class="projtitle">This is the BIG Image</p>
-          <p class="projtitle projdate">October 2020</p>
+          <div class="proj">
+            <p class="projtitle">This is the BIG Image</p>
+            <p class="projtitle projdate">October 2020</p>
+          </div>
+          <img ID="fill" src="MarketableNugget/ListRandomizer/BIGimage.jpg">
+          <div class="projinfo">Here is info about the Cheezcat</div>
         </div>
-        <img ID="fill" src="MarketableNugget/ListRandomizer/BIGimage.jpg">
-        <div class="projinfo">Here is info about the Cheezcat</div>
-      </div>
 
-      <div ID="fill" class="slides fade">
-        <div class="projtitle">
-          <p>This is the third Cheezcat</p>
-          <p class="projdate">October 2020</p>
+        <div class="proj">
+          <div class="projtitle">
+            <p>This is the third Cheezcat</p>
+            <p class="projdate">October 2020</p>
+          </div>
+          <img ID="fill" src="MarketableNugget/ListRandomizer/CheezCat3.jpg" style="width:100%">
+          <div class="projinfo">Here is info about the Cheezcat</div>
         </div>
-        <img ID="fill" src="MarketableNugget/ListRandomizer/CheezCat3.jpg" style="width:100%">
-        <div class="projinfo">Here is info about the Cheezcat</div>
-      </div>
 
-      <div ID="fill" class="slides fade">
-        <div class="projtitle">
-          <p>This is the fourth Cheezcat</p>
-          <p class="projdate">October 2020</p>
+        <div class="proj">
+          <div class="projtitle">
+            <p>This is the fourth Cheezcat</p>
+            <p class="projdate">October 2020</p>
+          </div>
+          <img ID="fill" src="MarketableNugget/ListRandomizer/CheezCat4.jpg" style="width:100%">
+          <div class="projinfo">Here is info about the Cheezcat</div>
         </div>
-        <img ID="fill" src="MarketableNugget/ListRandomizer/CheezCat4.jpg" style="width:100%">
-        <div class="projinfo">Here is info about the Cheezcat</div>
-      </div>
 
-      <a class ="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
+      
+      </div>
     </div>
-
-    <div class="buttons" style="text-align: left">
-      <button class="dot" onclick="currentSlide(1)"></button>
-      <button class="dot" onclick="currentSlide(2)"></button>
-      <button class="dot" onclick="currentSlide(3)"></button>
-      <button class="dot" onclick="currentSlide(4)"></button>
-    </div>
-
-    
-  <script type="text/javascript">
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n){
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("slides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if(n < 1) {slideIndex = slides.length}
-      for(i = 0; i < slides.length; i++){
-        slides[i].style.display = "none";
-      }
-      for(i = 0; i < dots.length; i++){
-        dots[i].className = "dot";
-      }
-
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-
-  </script>
 
   </div>
 
