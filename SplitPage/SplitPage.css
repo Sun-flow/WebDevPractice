@@ -38,25 +38,12 @@
 }
 
 #fill {
-  display:flex;
-  flex-shrink: 0;
-
-  align-self: center;
-  overflow: hidden;
-  
-  
-}
-
-#fill img {
-  vertical-align: middle;
-  object-fit: fill;
-  min-height: 100%;
-  max-height: 200%;
-  max-width: 150%;
-  text-align: center;
-  margin: auto;
-  justify-content: center;
-  align-self: center;
+  float: left;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-content: stretch;
+  min-height: 75vh;
 }
 
 .slideshow-container{
@@ -90,23 +77,27 @@
   background-color: whitesmoke;
 }
 
+.proj {
+
+}
+
 .projtitle{
   display: block;
   color: black;
   background-color: white;
   font-size: 15px;
-  font-size: 3vw;
+  font-size: 2vw;
   
   padding: 15px 15px;
   position: absolute;
   top: 3em;
-  width: 50%;
+  width: 40%;
   text-align: left;
 }
 
 .projdate {
   top: 5em;
-  width: 30%;
+  width: 25%;
   
 }
 
