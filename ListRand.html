@@ -29,7 +29,9 @@
         <script type="text/javascript">
             var ul = document.querySelector('ul');
             for (var i = ul.children.length; i >= 0; i--) {
-                if(ul.children[Math.random() * i | 0].id != "UrList"){ <!--This if clause is simply here to prevent a certain tag from being displayed. You probably don't need it-->
+
+                //This if clause is simply here to prevent a certain tag from being displayed. You probably don't need it
+                if(ul.children[Math.random() * i | 0].id != "UrList"){ 
                     ul.appendChild(ul.children[Math.random() * i | 0]);
                 }
             }
@@ -37,6 +39,10 @@
 
         <h1>
             <a href="ListRand.html">Reload</a>
+        </h1>
+
+        <h1>
+            <a href="TOC.html">Return to TOC</a>
         </h1>
 
     </body>
