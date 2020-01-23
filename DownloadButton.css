@@ -1,0 +1,19 @@
+.download-button{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 16px;
+    border: 2px solid #2F4F4F;
+    background-color: white;
+    cursor:pointer;
+    min-width: auto;
+    width: auto;
+}
+
+.download-button:hover{
+    background-color: #D3D3D3;
+}
+
+.download-link{
+    text-decoration: none;
+    color: #2F4F4F;
+}
