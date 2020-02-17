@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Cube Transition</Title>
+    <link href="ScrollCube.css">
+</head>
+
+<body>
+    <div id="cube-trans">
+        <div class="page1"></div>
+        <div class="page2"></div>
+        <div class="page3"></div>
+        <div class="page4"></div>
+
+    </div>
+
+    <ul id="bullets"></ul>
+
+    <script>
+    
+        function animationIn(i){
+            console.log(i, 'i\'m in')
+            switch(i){
+                case 1:
+                    $('.page2 h2').fadeIn();
+                    break;
+                case 2:
+                    $('.page3 h2').animate({top: '40%', left:'30%'}, 1000);
+                    break;
+                case 3:
+                    setTimeout(function)(){
+                        $('.page4 h2').addClass('ani')
+
+                    }, 0)
+                    break;
+                default:
+                    ;
+            }
+        }
+
+        function animationOut(i){
+            console.log(i, 'i\'m out')
+            switch(i){
+                case 1:
+                    $('.page2 h2').fadeOut();
+                    break;
+                case 2:
+                    $('.page3 h2').animate({top: 0, left: 0}, 1000);
+                    break;
+                case 3:
+                    setTimeout(function)(){
+                        $('.page4 h2').removeClass('ani')
+
+                    }, 0)
+                    break;
+                default:
+                    ;
+            }
+        }
+
+
+    </script>
+
+
+
+
+    <script src="cubeTransition.js-master/js/wheel-indicator.js"></script>
+    <script src="cubeTransition.js-master/js/jquery.touchSwipe.js"></script>
+    <script src="cubeTransition.js-master/js/cubeTransition.js"></script>
+
+
+
+</body>
+
+
+
+</html>

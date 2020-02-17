@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    overflow:hidden;
+    height: 100%;
+    background-color: #fefefe;
+    font-family: tahoma;
+}
+
+#cubetransition{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+}
+
+#cubetransition div{
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 5em;
+    color: white;
+    display: none;
+}
+
+.page1{
+    background-image: url(ListRandomizer/CheezCat1.jpg);
+    background-size: cover;
+}
+
+.page2{
+    background-image: url(ListRandomizer/CheezCat2.jpg);
+    background-size: cover;
+}
+
+.page3{
+    background-image: url(ListRandomizer/CheezCat3.jpg);
+    background-size: cover;
+}
+
+.page4{
+    background-image: url(ListRandomizer/CheezCat4.jpg);
+    background-size: cover;
+}
+
+.rotateCubeTopOut{
+    transform-origin: 50% 100%;
+    animation: rotateCubeTopOut .6s ease-in;
+}
+
+.rotateCubeTopIn{
+    transform-origin: 50% 0%;
+    animation: rotateCubeTopIn .6s ease-in;
+}
+
+.rotateCubeBottomOut{
+    transform-origin: 50% 0%;
+    animation: rotateCubeBottomOut .6s ease-in;
+}
+
+.rotateCubeBottomIn{
+    transform-origin: 50% 100%;
+    animation: rotateCubeBottomIn .6s ease-in;
+}
+
+@keyframes rotateCubeTopOut{
+    50%{
+        animation-timing-function: ease-out;
+        transform:translateY(-50%)
+        translateZ(-200px) rotateX(45deg);
+    }
+    100%{
+        transform:translateY(-100%)
+        rotateX(90deg);
+    }
+}
+
+@keyframes rotateCubeTopIn{
+    0%{
+        transform:translateY(100%)
+        rotateX(-90deg);
+    }
+    50%{
+        animation-timing-function: ease-out;
+        transform:translateY(50%)
+        translateZ(-200px) rotateX(90deg);
+    }
+}
+
+@keyframes rotateCubeBottomOut{
+    50%{
+        animation-timing-function: ease-out;
+        transform: translateY(50%)
+        translateZ(-200px) rotateX(-45deg);
+    }
+    100%{
+        transform: translateY(100%) rotateX(-90deg);
+    }
+}
+
+@keyframes rotateCubeBottomIn{
+    0%{
+        transform: translateY(100%) rotateX(90deg);
+    }
+    50%{
+        animation-timing-function: ease-out;
+        transform: translateY(-50%) translateZ(-200px) rotateX(45deg)
+    }
+}
